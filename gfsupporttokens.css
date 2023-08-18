@@ -190,7 +190,45 @@ background-image: url("./assets/whoyouare.png");
       padding: 10px 40px 10px 40px;
   }
 
+
+
+
+
   @media screen and (max-width: 600px) {
+
+.heroheaderbig {
+    color: #181818;
+    font-size: 9vh;
+    font:33.648px Euclidcircularb, Arial, sans-serif ;
+   margin:63px 0px 15px 0px ;
+   font-weight: bold;
+   text-align: center;
+}
+.heroheadersmall {
+    font:22px Euclidcircularb, Arial, sans-serif ;
+    color: #181818;
+    text-align: center;
+    margin: 15px 20px;
+}
+
+#wholeftdivheaderbig {
+    font:30.648px Euclidcircularb, Arial, sans-serif ;
+    font-weight: bold; 
+     color: #181818; 
+    font-size: 5vh;
+    margin: 15px auto;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -240,8 +278,79 @@ select {
 
 
 
+.whorightdiv {
+    background:linear-gradient(0deg, rgba(60, 64, 111, 0.3), rgba(15, 15, 194, 0.3)), url("./assets/aboutback.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    
+}
+
+#whorightdivheaderbig {
+    font:46.648px Euclidcircularb, Arial, sans-serif ;
+    font-weight: bold;
+    color: #9888FA;
+    margin: 15px 0px 0px 20px;
+}
+
+#whorightdivtext {
+    color: #ffffff;
+    font:15px Euclidcircularb, Arial, sans-serif ;
+    margin: 50px 50px 0px 20px;
+    font-weight: 300;
+    line-height: 1.5;
+}
 
 
+/* REDEEM */
+
+#redeemheadersmall {
+    color: #181818;
+    font:25px Euclidcircularb, Arial, sans-serif ;
+    font-weight: 500;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+#redeemheaderbig {
+    color: #181818;
+    font:50px Euclidcircularb, Arial, sans-serif ; 
+    font-weight: bold;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+
+
+
+/* CONTACT */
+
+#contactheaderbig {
+    font: 30px Euclidcircularb, Arial, sans-serif ;
+    font-weight: bold;
+    color: #181818;
+    font-size: 5vh;
+    margin: 25px 20px;
+    text-align: center;
+}
+
+.contactInput {
+    width: 100% !important;
+    height: 40px !important;
+    border: 1px solid #dadbdd !important;
+    border-radius: 7px !important;
+}
+#contactSumit {
+    width: 100% !important;
+    background-color: #090046;
+    color: #97FEED;
+    border: none;
+    margin:20px auto;
+    border-radius: 20px;
+    padding: 20px;
+    
+}
 
 
   }
