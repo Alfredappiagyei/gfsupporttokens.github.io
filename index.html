@@ -26,7 +26,7 @@
             <h1 id="wholeftdivheaderbig">Empower and support aspiring entrepreneurs in realizing their business dreams</h1>
             <img id="heroimage" src="./assets/whoyouare2.png" alt="hero" class="img img-responsive" >  
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 whorightdiv">
             <h2 id="whorightdivheaderbig">who we are ?</h2>
             <p id="whorightdivtext">
                 Green Future Entrepreneurship aid is a non-governmental organization (NGO) that provides financial support
@@ -35,6 +35,10 @@
                 funding through their GFtoken program. This initiative aims to empower and support aspiring entrepreneurs
                 in realizing their business dreams.
             </p>
+
+            <button class="btn whobtn-default" onclick="document.getElementById('id01').style.display='block'">
+                Register Now
+            </button>
         </div>
     </div>
 </div>
@@ -45,6 +49,9 @@
         <h3 id="redeemheadersmall">You Say</h3>
         <h1 id="redeemheaderbig">how do I <span style="color:#9888FA;">get in ?</span></h1>
         <p style="color: #181818; margin-top: 20px; font: Euclidcircularb, Arial, sans-serif; margin-left: 50px;">Just register !</p>
+        <button class="btn whobtn-default" onclick="document.getElementById('id01').style.display='block'">
+            Register Now
+        </button>
     </div>
 
     <div class="row" style="margin: 100px 20px;">
@@ -65,6 +72,12 @@
         <div class="col-md-6">
             <h1 id="contactheaderbig">Ok, GreenFuture.<br/>
                 do you want to <span style="color: #9888FA;">get in touch ?</span> </h1>
+
+                <!-- <button class="btn whobtn-default" onclick="document.getElementById('id01').style.display='block'">
+                    Register Now
+                </button> -->
+
+                <img  src="./assets/computer.jpg" alt="hero" class="img img-responsive" height="400px" width="100%" style="margin: 20px 0px 30px 20px ;" >
         </div>
         <div class="col-md-6">
             <form>
@@ -91,13 +104,108 @@
         </div>
     </div>
    
-   
 </div>
 
 
 
 
 
+
+
+<div id="id01" class="w3-modal">
+
+    <div class="w3-modal-content w3-animate-top w3-card-4">
+        <header class="w3-container">
+            <span onclick="document.getElementById('id01').style.display='none'"
+                class="w3-button w3-display-topright">&times;</span>
+            <h2 id="modalHeader">ENTER YOUR CORRECT DETAILS</h2>
+        </header>
+
+
+        <div class="container">
+            <form  action="https://formspree.io/f/mdorgnwq" method="POST">
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="fname">First name *</label><br>
+                        <input type="text" id="fname" name="FirstName" placeholder="First Name" required><br>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="lname">Last name *</label><br>
+                        <input type="text" id="lname" name="LastName" placeholder="Last Name" required>
+                    </div>
+                </div>
+
+                <label for="phone">Phone</label><br>
+                <input type="number" id="phone" name="PhoneNumber" placeholder="Phone Number"><br>
+
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="Email" placeholder="Email Address"><br>
+
+                <label for="id">Type of Entrepreneurship *</label><br>
+                <select id="identification" name="Entrepreneurship" required>
+                    <option value="select">--Select --Entrepreneurship</option>
+                    <option value="Beautician"    name="Beautician">Beautician</option>
+                    <option value="Construction"  name="Construction worker">Construction worker</option>
+                    <option value="Driver"        name="Driver">Driver</option>
+                    <option value="Electrician"   name="Electrician">Electrician</option>
+                    <option value="Dressmaker"    name="Dressmaker">Dressmaker </option>
+                    <option value="Others"        name="Others">Others</option>
+                </select><br>
+
+                <label for="lname">Input Other if not included in the above</label><br>
+                <input type="text" id="other" name="OtherEntrepreneurship " placeholder="Other Entrepreneurship"><br>
+
+
+                <label for="tokenid">Token ID *</label><br>
+                <input type="text" id="tokenid" name="TokenID" placeholder="Token ID" maxlength="12" minlength="12"
+                    required><br>
+
+                <label for="scode">Secret Code *</label><br>
+                <input type="text" id="scode" name="SecretCode" placeholder="Secret Code" maxlength="4" minlength="4"
+                    required><br>
+
+                <label for="id">Choose Identification *</label><br>
+                <select id="identification" name="Identification" required>
+                    <option value="select" >--Select --Identification</option>
+                    <option value="passport"  name="Passport">Passport</option>
+                    <option value="ghanacard" name="ghanacard">Ghana card</option>
+                    <option value="votersID"  name="votersID">Voters Id</option>
+                </select>
+
+                <label for="idnumber">Enter Identification Number <br>
+                <input type="number" id="idnumber" name="identificationNumber" required><br>
+
+                <label for="id">Network Provider *</label><br>
+                <select id="identification" name="NetworkProvider" required>
+                    <option value="select">--Select --Network Provider</option>
+                    <option value="mtn"        name="mtn">MTN</option>
+                    <option value="vodafone"   name="vodafone">Vodafone</option>
+                    <option value="airteltigo" name="airteltigo">AitelTigo</option>
+                    <option value="glo"        name="glo">Glo</option>
+                </select><br/>
+
+                    <label for="idnumber">Amount *</label> <br>
+                    <input type="checkbox" id="3,000GHC" name="Amount" value="3,000GHC">
+                    <label for="vehicle1"> 3,000GHC </label><br>
+                    <input type="checkbox" id="5,000GHC" name="Amount" value="5,000GHC">
+                    <label for="vehicle2"> 5,000GHC </label><br>
+                    <input type="checkbox" id="10,000GHC" name="Amount" value="10,000GHC">
+                    <label for="vehicle3"> 10,000GHC </label><br><br><br><br>
+
+
+                    <input type="checkbox" id="temscondition" name="termsconditions" value="Terms&Conditions">
+                    <label for="vehicle1">I agree to <b>Better Bonds Relief Tokens agreement</b> and the <b>Value Privacy Policy</b> </label><br>
+
+                    <button type="submit" class="btn modalbtn-default"> Submit</button>
+
+            </form>
+        </div>
+
+
+
+    </div>
+</div>
 
 
 
