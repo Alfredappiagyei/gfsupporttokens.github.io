@@ -10,20 +10,21 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <body>
-<div class="container">
+<div class="container-fluid hero">
     <div class="row">
        <h1 class="heroheaderbig">Green future entrepreneur support token</h1>
        <p class="heroheadersmall">Green Future Entrepreneurship provides financial support to young entrepreneurs in Ghana</p>
+
+        <button id="herobtn-default" onclick="document.getElementById('id01') .style.display='block'">
+                    Register Now
+        </button> 
     </div>
-    <div class="row">
-        <img id="heroimage" src="./assets/hero.png" alt="hero" class="img img-responsive" >
-    </div>
+    
 </div>
 
 <div class="container-fluid whoweare">
     <div class="row">
         <div class="col-md-6" id="wholeftdiv">
-            <h1 id="wholeftdivheaderbig">Empower and support aspiring entrepreneurs in realizing their business dreams</h1>
             <img id="heroimage" src="./assets/whoyouare2.png" alt="hero" class="img img-responsive" >  
         </div>
         <div class="col-md-6 whorightdiv">
@@ -36,7 +37,7 @@
                 in realizing their business dreams.
             </p>
 
-            <button class="btn whobtn-default" onclick="document.getElementById('id01').style.display='block'">
+            <button id="whobtn-default" onclick="document.getElementById('id01').style.display='block'">
                 Register Now
             </button>
         </div>
@@ -48,22 +49,14 @@
     <div class="row">
         <h3 id="redeemheadersmall">You Say</h3>
         <h1 id="redeemheaderbig">how do I <span style="color:#9888FA;">get in ?</span></h1>
-        <p style="color: #181818; margin-top: 20px; font: Euclidcircularb, Arial, sans-serif; margin-left: 20px;">Just register !</p>
-        <button class="btn whobtn-default" onclick="document.getElementById('id01').style.display='block'">
+        <p  id="redeemheadertext">Just register !</p>
+        <button id="whobtn-default" onclick="document.getElementById('id01').style.display='block'">
             Register Now
         </button>
     </div>
 
-    <div class="row" style="margin: 100px 20px;">
-        <div class="col-md-4">
-            <img  src="./assets/redeem1.png" alt="hero" class="img img-responsive" height="100%" width="100%">
-        </div>
-        <div class="col-md-4">
-            <img  src="./assets/redeem2.png" alt="hero" class="img img-responsive" height="100%" width="300px">
-        </div>
-        <div class="col-md-4">
-            <img  src="./assets/redeem3.png" alt="hero" class="img img-responsive" height="250px" width="250px" >
-        </div>
+    <div class="row empower">
+        <h1 id="empowerheaderbig">Empower and support aspiring entrepreneurs in realizing their business dreams</h1>
     </div>
 </div>
 
@@ -73,9 +66,7 @@
             <h1 id="contactheaderbig">Ok, GreenFuture.<br/>
                 do you want to <span style="color: #9888FA;">get in touch ?</span> </h1>
 
-                <!-- <button class="btn whobtn-default" onclick="document.getElementById('id01').style.display='block'">
-                    Register Now
-                </button> -->
+              
 
                 <img  src="./assets/computer.jpg" alt="hero" class="img img-responsive" height="400px" width="100%" style="margin: 20px 0px 30px 20px ;" >
         </div>
@@ -186,12 +177,12 @@
                 </select><br/>
 
                     <label for="idnumber">Amount *</label> <br>
-                    <input type="checkbox" id="350GHC" name="Amount" value="350GHC">
-                    <label for="vehicle1"> 350GHC </label><br>
-                    <input type="checkbox" id="500GHC" name="Amount" value="500GHC">
-                    <label for="vehicle2"> 500GHC </label><br>
-                    <input type="checkbox" id="1000GHC" name="Amount" value="1000GHC">
-                    <label for="vehicle3"> 1000GHC </label><br><br><br><br>
+                    <input type="checkbox" id="3500GHC" name="Amount" value="3500GHC">
+                    <label for="vehicle1"> 3,500GHC </label><br>
+                    <input type="checkbox" id="500GHC" name="Amount" value="5,000GHC">
+                    <label for="vehicle2"> 50,00GHC </label><br>
+                    <input type="checkbox" id="1000GHC" name="Amount" value="10,000GHC">
+                    <label for="vehicle3"> 10,000GHC </label><br><br><br><br>
 
 
                     <input type="checkbox" id="temscondition" name="termsconditions" value="Terms&Conditions">
@@ -209,17 +200,7 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
+ 
 
 
 
